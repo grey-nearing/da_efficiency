@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#PBS -N LDT
+#PBS -l select=1:ncpus=1
+#PBS -l walltime=12:00:00 
+#PBS -j oe 
+#PBS -o PBS_output 
+#PBS -W group_list=s0935 
+#PBS -V 
+# remove this optionPBS -q debug
+
+ulimit -s unlimited
+mpirun -np 1 ./LDT ldt.config
+
+

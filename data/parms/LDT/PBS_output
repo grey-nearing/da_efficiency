@@ -1,0 +1,38 @@
+forrtl: severe (41): insufficient virtual memory
+Image              PC                Routine            Line        Source             
+LDT                000000000092539E  Unknown               Unknown  Unknown
+LDT                0000000000923E36  Unknown               Unknown  Unknown
+LDT                00000000008DC5A2  Unknown               Unknown  Unknown
+LDT                00000000008882BB  Unknown               Unknown  Unknown
+LDT                00000000008BB5D3  Unknown               Unknown  Unknown
+LDT                0000000000485497  ldt_surfacetypemo         178  LDT_SurfaceTypeMod.F90
+LDT                0000000000529CB8  ldt_paramprocmod_         128  LDT_paramProcMod.F90
+LDT                00000000004D4EC0  ldt_init_lsmparam          19  LDT_init_LSMparamproc.F90
+LDT                0000000000559834  MAIN__                     39  LDTmain.F90
+LDT                000000000040E41C  Unknown               Unknown  Unknown
+libc.so.6          00002B0B4B53CBC6  Unknown               Unknown  Unknown
+LDT                000000000040E319  Unknown               Unknown  Unknown
+APPLICATION TERMINATED WITH THE EXIT STRING: Hangup (signal 1)
+________________________________________________________________
+Job Resource Usage Summary for 4736692 
+Note: SLURM doesn't account for the exact same resource types as PBS.  
+      Also, you may see some values missing or zero, typically for 
+      very short jobs.  However, please do contact NCCS USG if you 
+      think the values below are in error.
+
+  CPU Time Used		: 00:07:44
+  Memory Used		: 4036K
+  Virtual Memory Used	: 1135788K
+  Walltime Used		: 00:00:29
+
+  Memory Requested	: 0n (n=per node; c=per core)
+  CPUs Requested / Allocated : 1 / 16
+  Walltime Requested	: 12:00:00
+
+  Execution Queue	: compute
+  Head Node		: borg01w029
+  Charged to		: s1331
+
+  Job Stopped		: Fri Jul 24 04:44:42 EDT 2015
+_____________________________________________________________________
+
