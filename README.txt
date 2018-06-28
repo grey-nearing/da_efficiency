@@ -14,7 +14,7 @@ How To Run:
 	3a) Naviage to the <open> subdirectory.
 	3b) Create runtime subdirectories by running <setup_dirs.sh> script.
 	3c) Edit the hard-paths and header information in the <job.slurm> SLURM/PODS script [*].
-	3d) Run the open-loop simulations by submitting the <job.script> SLURM file.
+	3d) Run the open-loop simulations by submitting the <job.slurm> SLURM file.
 
 4) CDF-match the LPRM observations:
 	4a) Navigate to the <data/lprm> subdirectory.
@@ -24,9 +24,9 @@ How To Run:
 	5a) Navigate to the <enkf> subdirectory.
 	5b) Create runtime subdirectories by running <setup_dirs.sh> script.
 	5c) Edit the hard-paths and header information in the <job.slurm> SLURM/PODS script [*].
-	5d) Run the open-loop simulations by submitting the <job.script> SLURM file.
+	5d) Run the open-loop simulations by submitting the <job.slurm> SLURM file.
 
-6) Run the various analysis MatLab scripts in the <analysis> subdirectory to create teh various figures in the paper.
+6) Run the various analysis MatLab scripts in the <analysis> subdirectory to create the various figures in the paper.
 	6a) <make_scan_map> makes Figure 3 - showing locations of SCAN evaluation data stations.
 	6b) <main_convergence> makes Figure 4 - showing convergence of the IT metrics as a function of sample size.
 	6c) <main_efficiency> makes Figure 5 & Table 3 - showing main efficiency metrics.
