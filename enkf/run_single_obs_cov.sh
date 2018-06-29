@@ -28,7 +28,7 @@ echo $statePert $statePert $statePert $statePert > 'state_pert.txt'
 mv enks_mean.out ../../site_data/enkf_$1_$2_$3.out 
 mv back_mean.out ../../site_data/back_$1_$2_$3.out 
 
-# gatehr ensemble results
+# gather ensemble results
 # for (( j = 1 ; j <= $da_flag; j++ )); do
 #  cp back_$j.out ../site_data/back_${i}_${j}.out 
 #  cp enks_$j.out ../site_data/enks_${i}_${j}.out 
