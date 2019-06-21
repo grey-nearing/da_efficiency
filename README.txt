@@ -3,22 +3,23 @@ Welcome to the REAMDE file!
 How To Run:
 
 1) Compile Noah-MP model:
-	1a) Need a ifort compiler. On NCCS Discover, this can be accessed by sourcing the <environment_setup.sh> file. Note that this purges all modules and changes $PATH.
+	1a) With an ifort compiler, use the makefile.discover as a template. On NCCS Discover, this can be accessed by sourcing the <environment_setup.sh> file. Note that this purges all modules and changes $PATH.
+        1a) With a gfortran compiler, use the makefile as a template.
 	1b) In the <model_code> subdirectory run 'make clean' and 'make'.
 
 2) Make ensemble forcing data:
 	2a) Navigate to the <data/forcing> subdirectory
 	2b) Run the <pert_force.m> MatLab script.
 
-3) Run the open-loop simulations:
-	3a) Naviage to the <open> subdirectory.
-	3b) Create runtime subdirectories by running <setup_dirs.sh> script.
-	3c) Edit the hard-paths and header information in the <job.slurm> SLURM/PODS script [*].
-	3d) Run the open-loop simulations by submitting the <job.slurm> SLURM file.
+3) CDF-match the LPRM observations:
+	3a) Navigate to the <data/lprm> subdirectory.
+	3b) Run the <cdf_matching.m> matlab script.
 
-4) CDF-match the LPRM observations:
-	4a) Navigate to the <data/lprm> subdirectory.
-	4b) Run the <cdf_matching.m> matlab script.
+4) Run the open-loop simulations:
+	4a) Naviage to the <open> subdirectory.
+	4b) Create runtime subdirectories by running <setup_dirs.sh> script.
+	4c) Edit the hard-paths and header information in the <job.slurm> SLURM/PODS script [*].
+	4d) Run the open-loop simulations by submitting the <job.slurm> SLURM file.
 
 5) Run the EnKF-loop simulations:
 	5a) Navigate to the <enkf> subdirectory.
