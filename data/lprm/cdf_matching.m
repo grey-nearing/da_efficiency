@@ -27,7 +27,10 @@ for s = 1:Ns; tic
         I(In) = [];
         Zc(In) = [];
         
-        Rc = max(0.01, Ro*std(Zc)/std(Z));
+        Rc = max(0.01, mean(Ro*std(Zc)/std(Z)));
+        
+        fname = strcat('./site_data/cdf_sig_',num2str(s),'.txt');
+        save(fname,'Rc','-ascii');
         
         cdf = obs;
         cdf(:,5) = -9999;
