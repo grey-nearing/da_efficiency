@@ -355,7 +355,7 @@ program run_timestep
     write(fid,'(f17.6, f17.6, f17.6, f17.6,    &
                 f17.6, f17.6, f17.6, f17.6)')  & 
      state(t,e)%smc,                           &
-     0,0,0,0
+     0.,0.,0.,0.
    enddo ! time
 
    close(fid) ! ensemble file
