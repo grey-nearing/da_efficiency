@@ -20,7 +20,7 @@ for (( i = 1 ; i <= 129; i++ )); do
    rm -rf lat.txt lon.txt DelThisSCAN_Site.txt
 
    for (( j = 1 ; j <= $da_flag; j++ )); do
-     ln -s ../../../data/forcing/site_data/forcing_${i}_${j}.txt ./runtime_dirs/site_$i/forcing_$j.txt
+     ln -s ../../../data/forcing/perturbed/forcing_${i}_${j}.txt ./runtime_dirs/site_$i/forcing_$j.txt
    done
 
    cp ../data/parms/extract_parms/site_data/parms_$i.txt ./runtime_dirs/site_$i/parms.txt

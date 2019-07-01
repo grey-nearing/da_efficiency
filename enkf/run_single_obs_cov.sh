@@ -39,5 +39,3 @@ echo "finished site: $1 -- obs cov factor = $2 -- state pert factor = $3"
 
 
  
-
-
