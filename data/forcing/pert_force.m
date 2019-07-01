@@ -64,13 +64,24 @@ for s = 1:Nsites
 %  corrcoef(test1(:,3),test2(:,3))
 
   Uhat = U;
-  Uhat(:,6) = max(0,Uhat(:,6).*Pert(:,1)*s1);
-  Uhat(:,7) = max(0,Uhat(:,7)+Pert(:,2)*s2);
-  Uhat(:,8) = max(0,Uhat(:,8).*Pert(:,3)*s3);
+
+  Pert(:,1) = exp(Pert(:,1)*s1)/mean(exp(Pert(:,1)*s1));
+  Pert(:,2) = Pert(:,2)*s2;
+  Pert(:,3) = exp(Pert(:,3)*s3)/mean(exp(Pert(:,3)*s3));
+
+  mean(Pert)
+  std(Pert)
+  cov(Pert)
+
+  Uhat(:,6) = max(0,Uhat(:,6) .* Pert(:,1));
+  Uhat(:,7) = max(0,Uhat(:,7)  + Pert(:,2));
+  Uhat(:,8) = max(0,Uhat(:,8) .* Pert(:,3));
+
+  [min(Uhat(:,6)),min(Uhat(:,7)),min(Uhat(:,8))]
 
   Uhat = [Dates,Uhat];
 
-  fname = strcat('./site_data/forcing_',num2str(s),'_',num2str(u),'.txt');
+  fname = strcat('./perturbed/forcing_',num2str(s),'_',num2str(u),'.txt');
   save(fname,'Uhat','-ascii');
 
 %  fid = fopen(fname,'w');
