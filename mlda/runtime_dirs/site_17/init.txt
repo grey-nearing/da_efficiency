@@ -1,0 +1,27 @@
+4                           # setup%nsoil
+3                           # setup%nsnow
+6	                    # setup%zlvl      
+3600	                    # setup%dt        
+1	                    # setup%opt_crs   
+1	                    # setup%opt_btr   
+1	                    # setup%opt_run   
+1	                    # setup%opt_sfc   
+1	                    # setup%opt_frz   
+1	                    # setup%opt_inf   
+1	                    # setup%opt_rad   
+2	                    # setup%opt_alb   
+1	                    # setup%opt_snf   
+2	                    # setup%opt_tbot  
+1	                    # setup%opt_stc   
+2	                    # setup%dveg      
+0.10,0.30,0.60,1.0	    # setup%sldpth 
+266.09,274.04,276.89,279.91 # state%stc(1:setup%nsoil) 
+0		                          # state%snowh   
+0		                          # state%sneqv   
+3.94E-04	                          # state%canliq  
+25	                                  # state%rtmass  
+0.19	                                  # state%albold  
+0.5	                                  # state%lai     
+263.6909 	                          # state%tv      
+263.6909 	                          # state%tg      
+   
