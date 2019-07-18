@@ -1,3 +1,6 @@
+Code repository for the paper: The Efficiency of Data Assimilation
+https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2017WR020991
+
 Welcome to the REAMDE file!  
 
 How To Run:
